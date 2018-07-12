@@ -1,0 +1,5 @@
+#don't track bin folder
+bin/
+
+#don't track .settings folder
+.settings/
