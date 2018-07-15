@@ -35,7 +35,6 @@ public class University {
         		averageLevel += stnd.getKnowledgeLevel();
         	}
         	averageUniversityKnowledge.setLevel((int)averageLevel/listOfStudents.size());	//calc average
-        	System.out.println("Average: " + averageUniversityKnowledge.getLevel());
         }
     }
     
