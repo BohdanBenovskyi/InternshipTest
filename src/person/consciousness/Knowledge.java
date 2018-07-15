@@ -8,6 +8,6 @@ public class Knowledge {
     }
 	
 	public int getLevel() {
-		return lvl;
+		return this.lvl;
 	}
 }

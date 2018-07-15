@@ -7,19 +7,19 @@ public class Student {
 	private String nameOfStudent;
 	
 	public Student(String name, int level) {
-		nameOfStudent = name;
-		knowledgeOfStudent = new Knowledge(level);
+		this.nameOfStudent = name;
+		this.knowledgeOfStudent = new Knowledge(level);
     }
 
     public void setKnowledge(Knowledge knowledge) {
-        knowledgeOfStudent = knowledge;
+        this.knowledgeOfStudent = knowledge;
     }
     
     public int getKnowledgeLevel() {
-    	return knowledgeOfStudent.getLevel();
+    	return this.knowledgeOfStudent.getLevel();
     }
     
     public String getStudentName() {
-    	return nameOfStudent;
+    	return this.nameOfStudent;
     }
 }
