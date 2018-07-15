@@ -43,7 +43,7 @@ public class University {
     	return this.averageUniversityKnowledge;
     }
     
-    public List getListOfStudents() {
+    public List<Student> getListOfStudents() {
     	return this.listOfStudents;
     }
 }
