@@ -11,7 +11,7 @@ public class Internship {
 	private Knowledge averageKnowledge;					//variable which contains average level of knowledge
 	private List<Student> listOfInternshipStudents;		//variable which contains list of internship students
 	
-	public Internship(String name, List<Student> allStudents, Knowledge averageKnowledge) {
+	public Internship(String name, Knowledge averageKnowledge) {
         this.nameOfInternShip = name;
         this.averageKnowledge = averageKnowledge;
         this.listOfInternshipStudents = new ArrayList<Student>();
