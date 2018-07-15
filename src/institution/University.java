@@ -3,27 +3,18 @@ package institution;
 import java.util.ArrayList;
 
 import person.Student;
+import person.consciousness.Knowledge;
 
 public class University {
-	private String nameOfUniversity;
-	private ArrayList<Student> lst;		//list of students
-	
-    public University(String name) {
-    	nameOfUniversity = name;
-    	lst = new ArrayList<Student>();
+	public University(String name) {
+        //TODO: Implementation is needed
     }
 
     public void setStudent(Student student) {
-        
+        //TODO: Implementation is needed
     }
 
     public void addStudent(Student student) {
-        lst.add(student);		//add student to list
-    }
-    
-    public void printList() {
-    	for(Student std : lst) {
-    		System.out.println(std.getName());
-    	}
+        //TODO: Implementation is needed
     }
 }

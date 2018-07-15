@@ -1,9 +1,11 @@
 package institution.interlink;
 
+import java.util.ArrayList;
+
 import person.Student;
 
 public class Internship {
-    public Internship(String name) {
+	public Internship(String name) {
         //TODO: Implementation is needed
     }
 
