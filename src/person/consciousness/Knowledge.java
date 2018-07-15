@@ -1,7 +1,13 @@
 package person.consciousness;
 
 public class Knowledge {
+	private int lvl;
+	
 	public Knowledge(int level) {
-        //TODO: Implementation is needed
+        lvl = level;
     }
+	
+	public int getLevel() {
+		return lvl;
+	}
 }
