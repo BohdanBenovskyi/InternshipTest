@@ -1,13 +1,18 @@
 package institution;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import person.Student;
 import person.consciousness.Knowledge;
 
 public class University {
+	private String nameOfUniversity;
+	private List<Student> listOfStudents;
+	
 	public University(String name) {
-        //TODO: Implementation is needed
+		nameOfUniversity = name;
+		listOfStudents = new ArrayList<Student>();
     }
 
     public void setStudent(Student student) {
@@ -15,6 +20,6 @@ public class University {
     }
 
     public void addStudent(Student student) {
-        //TODO: Implementation is needed
+        listOfStudents.add(student);
     }
 }
