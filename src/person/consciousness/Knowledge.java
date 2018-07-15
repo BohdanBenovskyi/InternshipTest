@@ -10,4 +10,8 @@ public class Knowledge {
 	public int getLevel() {
 		return this.lvl;
 	}
+	
+	public void setLevel(int level) {
+		this.lvl = level;
+	}
 }
