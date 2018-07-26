@@ -24,18 +24,6 @@ public class University {
 
     public void addStudent(Student student) {
         listOfStudents.add(student);
-        
-        //calculation of average level
-        if(listOfStudents.isEmpty()) {	//if this is our first student than set average level to level knowledge of student
-        	averageUniversityKnowledge.setLevel(student.getKnowledgeLevel());
-        }
-        else {
-        	int averageLevel = 0;		//variable for sum of all students knowledges
-        	for(Student stnd : listOfStudents) {
-        		averageLevel += stnd.getKnowledgeLevel();
-        	}
-        	averageUniversityKnowledge.setLevel((int)averageLevel/listOfStudents.size());	//calc average
-        }
     }
     
     public Knowledge getAverageKnowledge() {
@@ -44,5 +32,13 @@ public class University {
     
     public List<Student> getListOfStudents() {
     	return this.listOfStudents;
+    }
+    
+    public void setAverageKnowledge(List<Student> listOfStudents) {
+	int averageLevel = 0;		//variable for sum of all students knowledges
+	for(Student stnd : listOfStudents) {
+		averageLevel += stnd.getKnowledgeLevel();
+	}
+	averageUniversityKnowledge.setLevel((int)averageLevel/listOfStudents.size());	//calc average
     }
 }
