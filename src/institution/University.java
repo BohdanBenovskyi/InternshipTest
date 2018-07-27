@@ -24,7 +24,7 @@ public class University {
 
     public void addStudent(Student student) {
 	listOfStudents.add(student);
-	setAverageKnowledge();
+	updateAverageKnowledge();
     }
 
     public Knowledge getAverageKnowledge() {
@@ -35,7 +35,7 @@ public class University {
 	return this.listOfStudents;
     }
 
-    private void setAverageKnowledge() {
+    private void updateAverageKnowledge() {
 	int averageLevel = 0; // variable for sum of all students knowledges
 	for (Student stnd : listOfStudents) {
 	    averageLevel += stnd.getKnowledgeLevel();
