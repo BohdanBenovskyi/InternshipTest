@@ -10,9 +10,9 @@ public class Application {
     public static void main(String[] args) {
 	University university = new University("CH.U.I.");
 
-	Source listStudents = new DemonstrationSource();	//or DatabaseSource or FileSource...
+	Source source = new DemonstrationSource();	//or DatabaseSource or FileSource...
 	
-	for(Student student : listStudents.getStudents()) {
+	for(Student student : source.getStudents()) {
 	    university.addStudent(student);
 	}
 
