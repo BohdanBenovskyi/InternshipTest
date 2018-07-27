@@ -18,39 +18,13 @@ public class University {
 	this.averageUniversityKnowledge = new Knowledge(0); // zero for empty university
     }
 
-    public void getStudentsFromSomeSource(String src) {
-	switch (src) {
-	case "FILE":
-	    /* Implementation of getStudents from file */
-	    break;
-
-	case "SERVICE":
-	    /* Implementation of getStudents from some service */
-	    break;
-
-	case "DATABASE":
-	    /* Implementation of getStudents from database */
-	    break;
-
-	case "DEMONSTRATION":
-	    addStudent(new Student("Andrew Kostenko", 5));
-	    addStudent(new Student("Julia Veselkina", 4));
-	    addStudent(new Student("Maria Perechrest", 3));
-	    addStudent(new Student("Petro Nicaragua", 2));
-	    addStudent(new Student("Vasuluna Zimbabve", 1));
-	    addStudent(new Student("Alex Uganda", 5));
-	    addStudent(new Student("Ivan Malaizia", 4));
-	    addStudent(new Student("Gregory Canada", 4));
-	    break;
-	}
-    }
-
     public void setStudent(Student student) {
 	this.bestStudent = student;
     }
 
     public void addStudent(Student student) {
 	listOfStudents.add(student);
+	setAverageKnowledge();
     }
 
     public Knowledge getAverageKnowledge() {
@@ -61,7 +35,7 @@ public class University {
 	return this.listOfStudents;
     }
 
-    public void setAverageKnowledge(List<Student> listOfStudents) {
+    private void setAverageKnowledge() {
 	int averageLevel = 0; // variable for sum of all students knowledges
 	for (Student stnd : listOfStudents) {
 	    averageLevel += stnd.getKnowledgeLevel();
