@@ -6,11 +6,12 @@ import person.Student;
 import source.Source;
 
 public class DatabaseSource implements Source {
-
+    private ArrayList<Student> lst;
+    
     @Override
     public ArrayList<Student> getStudents() {
-	// TODO Auto-generated method stub
-	return null;
+	lst = new ArrayList<Student>();
+	return lst;
     }
 
 }
